@@ -284,10 +284,9 @@ function ensure-llvm() {
         fi
         trap "rm -rf '$LLVM_TEMP_DIR'" EXIT
         execute bash -c "cd '$LLVM_TEMP_DIR' \
-        && git clone --depth 1 --single-branch --branch ${LLVM_VERSION} https://github.com/llvm/llvm-project llvm && cd llvm \
-        && pwd && mkdir build \
-        && ${CMAKE} -S llvm -B build -G 'Unix Makefiles' -DCMAKE_INSTALL_PREFIX='${LLVM_ROOT}' -DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON -DLLVM_BUILD_LLVM_DYLIB=ON -DLLVM_ENABLE_LIBCXX=ON -DLLVM_ENABLE_RTTI=ON -DLLVM_INCLUDE_DOCS=OFF -DLLVM_OPTIMIZED_TABLEGEN=ON -DLLVM_TARGETS_TO_BUILD=X86 -DCMAKE_BUILD_TYPE=Release \
-        && cd build && pwd \
+        && git clone --depth 1 --single-branch --branch $LLVM_VERSION https://github.com/llvm/llvm-project llvm && cd llvm/llvm \
+        && mkdir build && cd build \
+        && ${CMAKE} -DCMAKE_INSTALL_PREFIX='${LLVM_ROOT}' -DLLVM_TARGETS_TO_BUILD=host -DLLVM_BUILD_TOOLS=false -DLLVM_ENABLE_RTTI=1 -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_TERMINFO=OFF $LLVM_PINNED_CMAKE_ARGS .. \
         && make -j${JOBS} install"
         echo " - LLVM successfully installed @ ${LLVM_ROOT}"
     elif [[ $NAME == "Ubuntu" ]]; then

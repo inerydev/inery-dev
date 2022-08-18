@@ -1,0 +1,3 @@
+/home/user/Desktop/inr_build_new/inery/build/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir
+/home/user/Desktop/inr_build_new/inery/build/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir
+/home/user/Desktop/inr_build_new/inery/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_51527.dir

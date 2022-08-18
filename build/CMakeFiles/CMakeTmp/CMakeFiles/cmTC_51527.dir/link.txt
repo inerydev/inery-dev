@@ -1,0 +1,1 @@
+/root/inery/2.0/opt/clang8/bin/clang++  -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  CMakeFiles/cmTC_51527.dir/feature_tests.cxx.o  -o cmTC_51527 /root/inery/2.0/opt/clang8/lib/libc++.a /root/inery/2.0/opt/clang8/lib/libc++abi.a 
