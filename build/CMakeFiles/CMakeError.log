@@ -1,0 +1,100 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_59341/fast && /usr/bin/make -f CMakeFiles/cmTC_59341.dir/build.make CMakeFiles/cmTC_59341.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_59341.dir/src.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_59341.dir/src.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_59341
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59341.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -DCMAKE_HAVE_LIBC_PTHREAD  -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  CMakeFiles/cmTC_59341.dir/src.c.o  -o cmTC_59341 
+CMakeFiles/cmTC_59341.dir/src.c.o: In function `main':
+src.c:(.text+0x32): undefined reference to `pthread_create'
+src.c:(.text+0x3e): undefined reference to `pthread_detach'
+src.c:(.text+0x50): undefined reference to `pthread_join'
+src.c:(.text+0x67): undefined reference to `pthread_atfork'
+clang-10: error: linker command failed with exit code 1 (use -v to see invocation)
+CMakeFiles/cmTC_59341.dir/build.make:86: recipe for target 'cmTC_59341' failed
+make[1]: *** [cmTC_59341] Error 1
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_59341/fast' failed
+make: *** [cmTC_59341/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_SAFESTACK failed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_56408/fast && /usr/bin/make -f CMakeFiles/cmTC_56408.dir/build.make CMakeFiles/cmTC_56408.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_56408.dir/src.cxx.o
+/root/inery1.0/1.0/opt/clang8/bin/clang++   -isystem /root/inery1.0/1.0/opt/clang8/include/c++/v1 -isystem /usr/local/include -isystem /usr/include  -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -Wall -Wno-invalid-partial-specialization -DCOMPILER_HAS_SAFESTACK -fsanitize=safestack   -o CMakeFiles/cmTC_56408.dir/src.cxx.o -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/src.cxx
+clang-10: error: unsupported argument 'safestack' to option 'fsanitize='
+CMakeFiles/cmTC_56408.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_56408.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_56408.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_56408/fast' failed
+make: *** [cmTC_56408/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function memset_s exists failed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5b7f2/fast && /usr/bin/make -f CMakeFiles/cmTC_5b7f2.dir/build.make CMakeFiles/cmTC_5b7f2.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b7f2.dir/CheckFunctionExists.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -pedantic -Wall -Wextra -Werror -Wno-format-zero-length -Wno-implicit-fallthrough -Wformat -Wformat-security -flto -fstack-protector-all -DCHECK_FUNCTION_EXISTS=memset_s   -o CMakeFiles/cmTC_5b7f2.dir/CheckFunctionExists.c.o   -c /root/inery1.0/1.0/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5b7f2
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b7f2.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -pedantic -Wall -Wextra -Werror -Wno-format-zero-length -Wno-implicit-fallthrough -Wformat -Wformat-security -flto -fstack-protector-all -DCHECK_FUNCTION_EXISTS=memset_s  -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_5b7f2.dir/CheckFunctionExists.c.o  -o cmTC_5b7f2 
+/usr/bin/ld: /root/inery1.0/1.0/opt/clang8/bin/../lib/LLVMgold.so: error loading plugin: /root/inery1.0/1.0/opt/clang8/bin/../lib/LLVMgold.so: cannot open shared object file: No such file or directory
+clang-10: error: linker command failed with exit code 1 (use -v to see invocation)
+CMakeFiles/cmTC_5b7f2.dir/build.make:86: recipe for target 'cmTC_5b7f2' failed
+make[1]: *** [cmTC_5b7f2] Error 1
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_5b7f2/fast' failed
+make: *** [cmTC_5b7f2/fast] Error 2
+
+
+
+Determining if the function explicit_bzero exists failed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5f1fa/fast && /usr/bin/make -f CMakeFiles/cmTC_5f1fa.dir/build.make CMakeFiles/cmTC_5f1fa.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5f1fa.dir/CheckFunctionExists.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -pedantic -Wall -Wextra -Werror -Wno-format-zero-length -Wno-implicit-fallthrough -Wformat -Wformat-security -flto -fstack-protector-all -DCHECK_FUNCTION_EXISTS=explicit_bzero   -o CMakeFiles/cmTC_5f1fa.dir/CheckFunctionExists.c.o   -c /root/inery1.0/1.0/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5f1fa
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f1fa.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -pedantic -Wall -Wextra -Werror -Wno-format-zero-length -Wno-implicit-fallthrough -Wformat -Wformat-security -flto -fstack-protector-all -DCHECK_FUNCTION_EXISTS=explicit_bzero  -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_5f1fa.dir/CheckFunctionExists.c.o  -o cmTC_5f1fa 
+/usr/bin/ld: /root/inery1.0/1.0/opt/clang8/bin/../lib/LLVMgold.so: error loading plugin: /root/inery1.0/1.0/opt/clang8/bin/../lib/LLVMgold.so: cannot open shared object file: No such file or directory
+clang-10: error: linker command failed with exit code 1 (use -v to see invocation)
+CMakeFiles/cmTC_5f1fa.dir/build.make:86: recipe for target 'cmTC_5f1fa' failed
+make[1]: *** [cmTC_5f1fa] Error 1
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_5f1fa/fast' failed
+make: *** [cmTC_5f1fa/fast] Error 2
+
+
+

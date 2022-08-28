@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../libraries/chain/include/inery/chain/webassembly/ine-vm-oc/gs_seg_helpers.h
+stdint.h
+-
+setjmp.h
+-
+string.h
+-
+inery/chain/webassembly/ine-vm-oc/ine-vm-oc.h
+-
+
+../libraries/chain/include/inery/chain/webassembly/ine-vm-oc/ine-vm-oc.h
+setjmp.h
+-
+stdint.h
+-
+stdlib.h
+-
+vector
+-
+list
+-
+
+/home/inr_rebuild_1.0.2/inery/libraries/chain/webassembly/ine-vm-oc/gs_seg_helpers.c
+inery/chain/webassembly/ine-vm-oc/gs_seg_helpers.h
+-
+asm/prctl.h
+-
+sys/prctl.h
+-
+

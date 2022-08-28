@@ -1,0 +1,2 @@
+/usr/bin/ar qc libinery_testing.a  CMakeFiles/inery_testing.dir/tester.cpp.o CMakeFiles/inery_testing.dir/tester_network.cpp.o
+/usr/bin/ranlib libinery_testing.a

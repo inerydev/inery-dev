@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtest_control_api_plugin.a  CMakeFiles/test_control_api_plugin.dir/test_control_api_plugin.cpp.o
+/usr/bin/ranlib libtest_control_api_plugin.a

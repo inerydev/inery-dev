@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRuntime.a  CMakeFiles/Runtime.dir/Intrinsics.cpp.o CMakeFiles/Runtime.dir/Linker.cpp.o CMakeFiles/Runtime.dir/ObjectGC.cpp.o CMakeFiles/Runtime.dir/WAVMIntrinsics.cpp.o
+/usr/bin/ranlib libRuntime.a

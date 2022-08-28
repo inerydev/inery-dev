@@ -1,0 +1,2 @@
+/usr/bin/ar qc libyubihsm.a  CMakeFiles/yubihsm_static.dir/__/aes_cmac/aes.c.o CMakeFiles/yubihsm_static.dir/__/aes_cmac/aes_cmac.c.o CMakeFiles/yubihsm_static.dir/__/common/hash.c.o CMakeFiles/yubihsm_static.dir/__/common/pkcs5.c.o CMakeFiles/yubihsm_static.dir/__/common/rand.c.o CMakeFiles/yubihsm_static.dir/error.c.o CMakeFiles/yubihsm_static.dir/lib_util.c.o CMakeFiles/yubihsm_static.dir/yubihsm.c.o CMakeFiles/yubihsm_static.dir/yubihsm_libusb.c.o CMakeFiles/yubihsm_static.dir/yubihsm_usb.c.o CMakeFiles/yubihsm_static.dir/yubihsm_curl.c.o
+/usr/bin/ranlib libyubihsm.a

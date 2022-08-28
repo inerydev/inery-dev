@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstate_history_plugin.a  CMakeFiles/state_history_plugin.dir/state_history_plugin.cpp.o CMakeFiles/state_history_plugin.dir/state_history_plugin_abi.cpp.o
+/usr/bin/ranlib libstate_history_plugin.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libchainbase.a  CMakeFiles/chainbase.dir/src/chainbase.cpp.o CMakeFiles/chainbase.dir/src/pinnable_mapped_file.cpp.o
+/usr/bin/ranlib libchainbase.a

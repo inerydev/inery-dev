@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtrace_api_plugin.a  CMakeFiles/trace_api_plugin.dir/request_handler.cpp.o CMakeFiles/trace_api_plugin.dir/store_provider.cpp.o CMakeFiles/trace_api_plugin.dir/abi_data_handler.cpp.o CMakeFiles/trace_api_plugin.dir/compressed_file.cpp.o CMakeFiles/trace_api_plugin.dir/trace_api_plugin.cpp.o
+/usr/bin/ranlib libtrace_api_plugin.a

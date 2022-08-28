@@ -1,0 +1,643 @@
+The system is: Linux - 4.15.0-163-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /root/inery1.0/1.0/opt/clang8/bin/clang 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/3.16.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /root/inery1.0/1.0/opt/clang8/bin/clang++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/3.16.2/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d744a/fast && /usr/bin/make -f CMakeFiles/cmTC_d744a.dir/build.make CMakeFiles/cmTC_d744a.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d744a.dir/CMakeCCompilerABI.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -v -o CMakeFiles/cmTC_d744a.dir/CMakeCCompilerABI.c.o   -c /root/inery1.0/1.0/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+clang version 10.0.0 (https://github.com/llvm/llvm-project d32170dbd5b0d54436537b6b75beaf44324e0c28)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /root/inery1.0/1.0/opt/clang8/bin
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/root/inery1.0/1.0/opt/clang8/bin/clang-10" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 1 -pic-is-pie -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0 -D _FORTIFY_SOURCE=2 -internal-isystem /usr/local/include -internal-isystem /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -faddrsig -o CMakeFiles/cmTC_d744a.dir/CMakeCCompilerABI.c.o -x c /root/inery1.0/1.0/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0 default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+Linking C executable cmTC_d744a
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d744a.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_d744a.dir/CMakeCCompilerABI.c.o  -o cmTC_d744a 
+clang version 10.0.0 (https://github.com/llvm/llvm-project d32170dbd5b0d54436537b6b75beaf44324e0c28)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /root/inery1.0/1.0/opt/clang8/bin
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/ld" -pie -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d744a /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -L/root/inery1.0/1.0/opt/clang8/bin/../lib -L/lib -L/usr/lib -z relro -z now CMakeFiles/cmTC_d744a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/include]
+    add: [/root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include] ==> [/root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/local/include;/root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_d744a/fast && /usr/bin/make -f CMakeFiles/cmTC_d744a.dir/build.make CMakeFiles/cmTC_d744a.dir/build]
+  ignore line: [make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d744a.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -v -o CMakeFiles/cmTC_d744a.dir/CMakeCCompilerABI.c.o   -c /root/inery1.0/1.0/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang version 10.0.0 (https://github.com/llvm/llvm-project d32170dbd5b0d54436537b6b75beaf44324e0c28)]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /root/inery1.0/1.0/opt/clang8/bin]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8]
+  ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/root/inery1.0/1.0/opt/clang8/bin/clang-10" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 1 -pic-is-pie -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0 -D _FORTIFY_SOURCE=2 -internal-isystem /usr/local/include -internal-isystem /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fdiagnostics-show-option -faddrsig -o CMakeFiles/cmTC_d744a.dir/CMakeCCompilerABI.c.o -x c /root/inery1.0/1.0/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 10.0.0 based upon LLVM 10.0.0 default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_d744a]
+  ignore line: [/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d744a.dir/link.txt --verbose=1]
+  ignore line: [/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl -z relro -z now -v CMakeFiles/cmTC_d744a.dir/CMakeCCompilerABI.c.o  -o cmTC_d744a ]
+  ignore line: [clang version 10.0.0 (https://github.com/llvm/llvm-project d32170dbd5b0d54436537b6b75beaf44324e0c28)]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /root/inery1.0/1.0/opt/clang8/bin]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8]
+  ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d744a /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -L/root/inery1.0/1.0/opt/clang8/bin/../lib -L/lib -L/usr/lib -z relro -z now CMakeFiles/cmTC_d744a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_d744a] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+    arg [-L/root/inery1.0/1.0/opt/clang8/bin/../lib] ==> dir [/root/inery1.0/1.0/opt/clang8/bin/../lib]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_d744a.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+  collapse library dir [/root/inery1.0/1.0/opt/clang8/bin/../lib] ==> [/root/inery1.0/1.0/opt/clang8/lib]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/root/inery1.0/1.0/opt/clang8/lib;/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c654d/fast && /usr/bin/make -f CMakeFiles/cmTC_c654d.dir/build.make CMakeFiles/cmTC_c654d.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c654d.dir/CMakeCXXCompilerABI.cpp.o
+/root/inery1.0/1.0/opt/clang8/bin/clang++   -isystem /root/inery1.0/1.0/opt/clang8/include/c++/v1 -isystem /usr/local/include -isystem /usr/include  -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -v -o CMakeFiles/cmTC_c654d.dir/CMakeCXXCompilerABI.cpp.o -c /root/inery1.0/1.0/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+clang version 10.0.0 (https://github.com/llvm/llvm-project d32170dbd5b0d54436537b6b75beaf44324e0c28)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /root/inery1.0/1.0/opt/clang8/bin
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/root/inery1.0/1.0/opt/clang8/bin/clang-10" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 1 -pic-is-pie -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debugger-tuning=gdb -v -nostdinc++ -resource-dir /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0 -isystem /root/inery1.0/1.0/opt/clang8/include/c++/v1 -isystem /usr/local/include -isystem /usr/include -D _FORTIFY_SOURCE=2 -internal-isystem /usr/local/include -internal-isystem /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -faddrsig -o CMakeFiles/cmTC_c654d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /root/inery1.0/1.0/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 10.0.0 based upon LLVM 10.0.0 default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/include"
+ignoring duplicate directory "/usr/local/include"
+ignoring duplicate directory "/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /root/inery1.0/1.0/opt/clang8/include/c++/v1
+ /usr/local/include
+ /usr/include
+ /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include
+ /usr/include/x86_64-linux-gnu
+End of search list.
+Linking CXX executable cmTC_c654d
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c654d.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang++  -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now -v CMakeFiles/cmTC_c654d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c654d  /root/inery1.0/1.0/opt/clang8/lib/libc++.a /root/inery1.0/1.0/opt/clang8/lib/libc++abi.a 
+clang version 10.0.0 (https://github.com/llvm/llvm-project d32170dbd5b0d54436537b6b75beaf44324e0c28)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /root/inery1.0/1.0/opt/clang8/bin
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+clang-10: warning: argument unused during compilation: '-nostdinc++' [-Wunused-command-line-argument]
+ "/usr/bin/ld" -pie -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c654d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -L/root/inery1.0/1.0/opt/clang8/bin/../lib -L/lib -L/usr/lib -z relro -z now CMakeFiles/cmTC_c654d.dir/CMakeCXXCompilerABI.cpp.o /root/inery1.0/1.0/opt/clang8/lib/libc++.a /root/inery1.0/1.0/opt/clang8/lib/libc++abi.a -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/root/inery1.0/1.0/opt/clang8/include/c++/v1]
+    add: [/usr/local/include]
+    add: [/usr/include]
+    add: [/root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include]
+    add: [/usr/include/x86_64-linux-gnu]
+  end of search list found
+  collapse include dir [/root/inery1.0/1.0/opt/clang8/include/c++/v1] ==> [/root/inery1.0/1.0/opt/clang8/include/c++/v1]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  collapse include dir [/root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include] ==> [/root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  implicit include dirs: [/root/inery1.0/1.0/opt/clang8/include/c++/v1;/usr/local/include;/usr/include;/root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include;/usr/include/x86_64-linux-gnu]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_c654d/fast && /usr/bin/make -f CMakeFiles/cmTC_c654d.dir/build.make CMakeFiles/cmTC_c654d.dir/build]
+  ignore line: [make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c654d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/root/inery1.0/1.0/opt/clang8/bin/clang++   -isystem /root/inery1.0/1.0/opt/clang8/include/c++/v1 -isystem /usr/local/include -isystem /usr/include  -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -v -o CMakeFiles/cmTC_c654d.dir/CMakeCXXCompilerABI.cpp.o -c /root/inery1.0/1.0/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang version 10.0.0 (https://github.com/llvm/llvm-project d32170dbd5b0d54436537b6b75beaf44324e0c28)]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /root/inery1.0/1.0/opt/clang8/bin]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8]
+  ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/root/inery1.0/1.0/opt/clang8/bin/clang-10" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 1 -pic-is-pie -mthread-model posix -mframe-pointer=all -fmath-errno -fno-rounding-math -masm-verbose -mconstructor-aliases -munwind-tables -target-cpu x86-64 -dwarf-column-info -fno-split-dwarf-inlining -debugger-tuning=gdb -v -nostdinc++ -resource-dir /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0 -isystem /root/inery1.0/1.0/opt/clang8/include/c++/v1 -isystem /usr/local/include -isystem /usr/include -D _FORTIFY_SOURCE=2 -internal-isystem /usr/local/include -internal-isystem /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fgnuc-version=4.2.1 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -faddrsig -o CMakeFiles/cmTC_c654d.dir/CMakeCXXCompilerABI.cpp.o -x c++ /root/inery1.0/1.0/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 10.0.0 based upon LLVM 10.0.0 default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/include"]
+  ignore line: [ignoring duplicate directory "/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /root/inery1.0/1.0/opt/clang8/include/c++/v1]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include]
+  ignore line: [ /root/inery1.0/1.0/opt/clang8/lib/clang/10.0.0/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_c654d]
+  ignore line: [/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c654d.dir/link.txt --verbose=1]
+  ignore line: [/root/inery1.0/1.0/opt/clang8/bin/clang++  -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl -z relro -z now -v CMakeFiles/cmTC_c654d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c654d  /root/inery1.0/1.0/opt/clang8/lib/libc++.a /root/inery1.0/1.0/opt/clang8/lib/libc++abi.a ]
+  ignore line: [clang version 10.0.0 (https://github.com/llvm/llvm-project d32170dbd5b0d54436537b6b75beaf44324e0c28)]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /root/inery1.0/1.0/opt/clang8/bin]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8]
+  ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/11]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [clang-10: warning: argument unused during compilation: '-nostdinc++' [-Wunused-command-line-argument]]
+  link line: [ "/usr/bin/ld" -pie -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c654d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -L/root/inery1.0/1.0/opt/clang8/bin/../lib -L/lib -L/usr/lib -z relro -z now CMakeFiles/cmTC_c654d.dir/CMakeCXXCompilerABI.cpp.o /root/inery1.0/1.0/opt/clang8/lib/libc++.a /root/inery1.0/1.0/opt/clang8/lib/libc++abi.a -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c654d] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+    arg [-L/root/inery1.0/1.0/opt/clang8/bin/../lib] ==> dir [/root/inery1.0/1.0/opt/clang8/bin/../lib]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [CMakeFiles/cmTC_c654d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [/root/inery1.0/1.0/opt/clang8/lib/libc++.a] ==> lib [/root/inery1.0/1.0/opt/clang8/lib/libc++.a]
+    arg [/root/inery1.0/1.0/opt/clang8/lib/libc++abi.a] ==> lib [/root/inery1.0/1.0/opt/clang8/lib/libc++abi.a]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+  collapse library dir [/root/inery1.0/1.0/opt/clang8/bin/../lib] ==> [/root/inery1.0/1.0/opt/clang8/lib]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [/root/inery1.0/1.0/opt/clang8/lib/libc++.a;/root/inery1.0/1.0/opt/clang8/lib/libc++abi.a;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/root/inery1.0/1.0/opt/clang8/lib;/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b0172/fast && /usr/bin/make -f CMakeFiles/cmTC_b0172.dir/build.make CMakeFiles/cmTC_b0172.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b0172.dir/CheckIncludeFile.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -o CMakeFiles/cmTC_b0172.dir/CheckIncludeFile.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b0172
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0172.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  CMakeFiles/cmTC_b0172.dir/CheckIncludeFile.c.o  -o cmTC_b0172 
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file alloca.h exists passed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f1c95/fast && /usr/bin/make -f CMakeFiles/cmTC_f1c95.dir/build.make CMakeFiles/cmTC_f1c95.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1c95.dir/CheckIncludeFile.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -o CMakeFiles/cmTC_f1c95.dir/CheckIncludeFile.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f1c95
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1c95.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  CMakeFiles/cmTC_f1c95.dir/CheckIncludeFile.c.o  -o cmTC_f1c95 
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d4cf6/fast && /usr/bin/make -f CMakeFiles/cmTC_d4cf6.dir/build.make CMakeFiles/cmTC_d4cf6.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d4cf6.dir/CheckIncludeFile.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -o CMakeFiles/cmTC_d4cf6.dir/CheckIncludeFile.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d4cf6
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4cf6.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  CMakeFiles/cmTC_d4cf6.dir/CheckIncludeFile.c.o  -o cmTC_d4cf6 
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the snprintf exist passed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_51b37/fast && /usr/bin/make -f CMakeFiles/cmTC_51b37.dir/build.make CMakeFiles/cmTC_51b37.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_51b37.dir/CheckSymbolExists.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -o CMakeFiles/cmTC_51b37.dir/CheckSymbolExists.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_51b37
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51b37.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_51b37.dir/CheckSymbolExists.c.o  -o cmTC_51b37 
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+File /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysconf exist passed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8142c/fast && /usr/bin/make -f CMakeFiles/cmTC_8142c.dir/build.make CMakeFiles/cmTC_8142c.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8142c.dir/CheckSymbolExists.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -o CMakeFiles/cmTC_8142c.dir/CheckSymbolExists.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_8142c
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8142c.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_8142c.dir/CheckSymbolExists.c.o  -o cmTC_8142c 
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+File /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysconf
+  return ((int*)(&sysconf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcasecmp exist passed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f4499/fast && /usr/bin/make -f CMakeFiles/cmTC_f4499.dir/build.make CMakeFiles/cmTC_f4499.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f4499.dir/CheckSymbolExists.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -o CMakeFiles/cmTC_f4499.dir/CheckSymbolExists.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f4499
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4499.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_f4499.dir/CheckSymbolExists.c.o  -o cmTC_f4499 
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+File /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasecmp
+  return ((int*)(&strcasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_31c60/fast && /usr/bin/make -f CMakeFiles/cmTC_31c60.dir/build.make CMakeFiles/cmTC_31c60.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31c60.dir/CheckIncludeFile.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -o CMakeFiles/cmTC_31c60.dir/CheckIncludeFile.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_31c60
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31c60.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  CMakeFiles/cmTC_31c60.dir/CheckIncludeFile.c.o  -o cmTC_31c60 
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_db46e/fast && /usr/bin/make -f CMakeFiles/cmTC_db46e.dir/build.make CMakeFiles/cmTC_db46e.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_db46e.dir/CheckIncludeFile.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -o CMakeFiles/cmTC_db46e.dir/CheckIncludeFile.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_db46e
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db46e.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  CMakeFiles/cmTC_db46e.dir/CheckIncludeFile.c.o  -o cmTC_db46e 
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_651aa/fast && /usr/bin/make -f CMakeFiles/cmTC_651aa.dir/build.make CMakeFiles/cmTC_651aa.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_651aa.dir/CheckIncludeFile.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -o CMakeFiles/cmTC_651aa.dir/CheckIncludeFile.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_651aa
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_651aa.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  CMakeFiles/cmTC_651aa.dir/CheckIncludeFile.c.o  -o cmTC_651aa 
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0205a/fast && /usr/bin/make -f CMakeFiles/cmTC_0205a.dir/build.make CMakeFiles/cmTC_0205a.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0205a.dir/SSIZE_T.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -o CMakeFiles/cmTC_0205a.dir/SSIZE_T.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CheckTypeSize/SSIZE_T.c
+Linking C executable cmTC_0205a
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0205a.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_0205a.dir/SSIZE_T.c.o  -o cmTC_0205a 
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c4aea/fast && /usr/bin/make -f CMakeFiles/cmTC_c4aea.dir/build.make CMakeFiles/cmTC_c4aea.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4aea.dir/SIZEOF_SIZE_T.c.o
+/root/inery1.0/1.0/opt/clang8/bin/clang   -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie    -o CMakeFiles/cmTC_c4aea.dir/SIZEOF_SIZE_T.c.o   -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTC_c4aea
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4aea.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie   -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_c4aea.dir/SIZEOF_SIZE_T.c.o  -o cmTC_c4aea 
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_HAS_UBSAN succeeded with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_623fb/fast && /usr/bin/make -f CMakeFiles/cmTC_623fb.dir/build.make CMakeFiles/cmTC_623fb.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_623fb.dir/src.cxx.o
+/root/inery1.0/1.0/opt/clang8/bin/clang++   -isystem /root/inery1.0/1.0/opt/clang8/include/c++/v1 -isystem /usr/local/include -isystem /usr/include  -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -Wall -Wno-invalid-partial-specialization -DCOMPILER_HAS_UBSAN -fsanitize=undefined   -o CMakeFiles/cmTC_623fb.dir/src.cxx.o -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_623fb
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_623fb.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang++  -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -Wall -Wno-invalid-partial-specialization -DCOMPILER_HAS_UBSAN -fsanitize=undefined  -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_623fb.dir/src.cxx.o  -o cmTC_623fb  /root/inery1.0/1.0/opt/clang8/lib/libc++.a /root/inery1.0/1.0/opt/clang8/lib/libc++abi.a 
+clang-10: warning: argument unused during compilation: '-nostdinc++' [-Wunused-command-line-argument]
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_ASAN succeeded with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_497aa/fast && /usr/bin/make -f CMakeFiles/cmTC_497aa.dir/build.make CMakeFiles/cmTC_497aa.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_497aa.dir/src.cxx.o
+/root/inery1.0/1.0/opt/clang8/bin/clang++   -isystem /root/inery1.0/1.0/opt/clang8/include/c++/v1 -isystem /usr/local/include -isystem /usr/include  -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -Wall -Wno-invalid-partial-specialization -DCOMPILER_HAS_ASAN -fsanitize=address   -o CMakeFiles/cmTC_497aa.dir/src.cxx.o -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_497aa
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_497aa.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang++  -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -Wall -Wno-invalid-partial-specialization -DCOMPILER_HAS_ASAN -fsanitize=address  -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_497aa.dir/src.cxx.o  -o cmTC_497aa  /root/inery1.0/1.0/opt/clang8/lib/libc++.a /root/inery1.0/1.0/opt/clang8/lib/libc++abi.a 
+clang-10: warning: argument unused during compilation: '-nostdinc++' [-Wunused-command-line-argument]
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_MSAN succeeded with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c969b/fast && /usr/bin/make -f CMakeFiles/cmTC_c969b.dir/build.make CMakeFiles/cmTC_c969b.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c969b.dir/src.cxx.o
+/root/inery1.0/1.0/opt/clang8/bin/clang++   -isystem /root/inery1.0/1.0/opt/clang8/include/c++/v1 -isystem /usr/local/include -isystem /usr/include  -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -Wall -Wno-invalid-partial-specialization -DCOMPILER_HAS_MSAN -fsanitize=memory   -o CMakeFiles/cmTC_c969b.dir/src.cxx.o -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c969b
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c969b.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang++  -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -Wall -Wno-invalid-partial-specialization -DCOMPILER_HAS_MSAN -fsanitize=memory  -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_c969b.dir/src.cxx.o  -o cmTC_c969b  /root/inery1.0/1.0/opt/clang8/lib/libc++.a /root/inery1.0/1.0/opt/clang8/lib/libc++abi.a 
+clang-10: warning: argument unused during compilation: '-nostdinc++' [-Wunused-command-line-argument]
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_TSAN succeeded with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9c3ec/fast && /usr/bin/make -f CMakeFiles/cmTC_9c3ec.dir/build.make CMakeFiles/cmTC_9c3ec.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9c3ec.dir/src.cxx.o
+/root/inery1.0/1.0/opt/clang8/bin/clang++   -isystem /root/inery1.0/1.0/opt/clang8/include/c++/v1 -isystem /usr/local/include -isystem /usr/include  -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -Wall -Wno-invalid-partial-specialization -DCOMPILER_HAS_TSAN -fsanitize=thread   -o CMakeFiles/cmTC_9c3ec.dir/src.cxx.o -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9c3ec
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c3ec.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang++  -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -Wall -Wno-invalid-partial-specialization -DCOMPILER_HAS_TSAN -fsanitize=thread  -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_9c3ec.dir/src.cxx.o  -o cmTC_9c3ec  /root/inery1.0/1.0/opt/clang8/lib/libc++.a /root/inery1.0/1.0/opt/clang8/lib/libc++abi.a 
+clang-10: warning: argument unused during compilation: '-nostdinc++' [-Wunused-command-line-argument]
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_HAS_STACK_PROTECTOR succeeded with the following output:
+Change Dir: /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7a866/fast && /usr/bin/make -f CMakeFiles/cmTC_7a866.dir/build.make CMakeFiles/cmTC_7a866.dir/build
+make[1]: Entering directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7a866.dir/src.cxx.o
+/root/inery1.0/1.0/opt/clang8/bin/clang++   -isystem /root/inery1.0/1.0/opt/clang8/include/c++/v1 -isystem /usr/local/include -isystem /usr/include  -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -Wall -Wno-invalid-partial-specialization -DCOMPILER_HAS_STACK_PROTECTOR -fstack-protector-strong   -o CMakeFiles/cmTC_7a866.dir/src.cxx.o -c /home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7a866
+/root/inery1.0/1.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a866.dir/link.txt --verbose=1
+/root/inery1.0/1.0/opt/clang8/bin/clang++  -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -nostdinc++ -D_FORTIFY_SOURCE=2 -fstack-protector-strong -fpie -Wall -Wno-invalid-partial-specialization -DCOMPILER_HAS_STACK_PROTECTOR -fstack-protector-strong  -stdlib=libc++ -nostdlib++ -pie -Wl,-z,relro,-z,now  -rdynamic CMakeFiles/cmTC_7a866.dir/src.cxx.o  -o cmTC_7a866  /root/inery1.0/1.0/opt/clang8/lib/libc++.a /root/inery1.0/1.0/opt/clang8/lib/libc++abi.a 
+clang-10: warning: argument unused during compilation: '-nostdinc++' [-Wunused-command-line-argument]
+make[1]: Leaving directory '/home/inr_rebuild_1.0.2/inery/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

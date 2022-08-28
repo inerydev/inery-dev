@@ -1,0 +1,10 @@
+libdir=-L/root/inery1.0/1.0/lib
+includedir=-I
+
+Name: yubihsm
+Description: Yubico YubiHSM C Library
+URL: https://www.yubico.com/
+Version: 2.0.1
+Requires.private: libcrypto libcurl
+Libs: ${libdir} -lyubihsm
+Cflags: ${includedir}
